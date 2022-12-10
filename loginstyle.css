@@ -47,7 +47,6 @@
   background: #5F9DF7;
 }
 
-
 .container {
   position: relative;
   z-index: 1;
@@ -69,7 +68,7 @@ body {
   width: 100vw;
   height: 100vh; 
   position: relative; 
-  background: radial-gradient(rgb(0, 251, 255), #1746A2);     
+  background: radial-gradient( circle at top left  ,rgb(0, 251, 255), #1746A2);     
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      

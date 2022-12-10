@@ -1,52 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
 * {
     margin: 0px;
 }
 
 main {
+
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #eee;
     margin: 0 auto;
     max-width: 100vw;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 200px 1fr 200px;
     grid-template-rows: 10vh 
     10vh 
-    60vh
+    67vh
     10vh 
-    10vh;
+    3vh;
 
     grid-template-areas:
         "my-header my-header my-header"
-        "my-nav my-nav my-nav"
+        "my-aside my-nav my-nav"
         "my-aside my-section my-section"
         "my-aside my-section my-section"
         "my-footer my-footer my-footer"
 }
 
 header {
-    text-align: center;
+
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
     grid-area: my-header;
-    background-color: #1746A2;
+    background-color: black;
+
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
     grid-area: my-nav;
-    background-color: #eee;
+    background-color: #FFF7E9;
+}
+
+form {
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+textarea{
+
+    margin-top: 5px;
+    width: 30vw;
+    height: 40px;
+    border-top: 1px solid;
+}
+
+
+input {
+    margin-top: 5px;
+    color: white;
+    background-color: black;
+    border: none;
+    width: 10vw;
+    height: 46px;
+}
+
+
+
+li {
+
+
+    list-style: none;
+    background-color: white;
+    width: 50vw;
+    height: 25vh;
+    margin: 35px;
+    padding: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+
 }
 
 aside {
+
+    padding-left: 15px;
+    color: white;
     grid-area: my-aside;
-    background: white;
-    border-radius: 10px;
-    border: 1px solid;
+    background: #5F9DF7;
+    
+    
+}
+
+#postE {
+    background-color: black;
 }
 
 section {
+
+    box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    justify-content: center;
+    color: black;
     grid-area: my-section;
     background-color: #eee;
+    overflow: scroll;
+ 
+}
+
+.post {
+
+
 }
 
 footer {
+    padding-left: 15px;
     grid-area: my-footer;
     background-color: black;
 }
@@ -57,7 +134,7 @@ footer {
         grid-template-rows: 150px 100px 1fr 100px;
         grid-template-areas:
             "my-header my-header my-header"
-            "my-nav my-nav my-nav"
+            "my-aside my-nav my-nav"
             "my-aside my-section my-section"
             "my-footer my-footer my-footer"
     }
