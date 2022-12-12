@@ -4,6 +4,24 @@
     margin: 0px;
 }
 
+.coment {
+    width: 20vw;
+    height: 10px;
+    background-color: black;
+}
+
+.pl {
+    color: black;
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    width: 145px;
+    border-left: 5px solid #FF731D;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+}
+
 main {
 
     font-family: "Roboto", sans-serif;
@@ -55,6 +73,7 @@ form {
     position: relative;
     align-items: center;
     justify-content: center;
+    height: 100px;
     
 }
 
@@ -67,20 +86,21 @@ textarea{
 }
 
 
-input {
+/* input {
     margin-top: 5px;
     color: white;
     background-color: black;
     border: none;
     width: 10vw;
     height: 46px;
-}
+} */
 
 
 
 li {
 
-
+    word-break: break-all;
+    word-wrap: break-word;
     list-style: none;
     background-color: white;
     width: 50vw;
@@ -117,10 +137,7 @@ section {
  
 }
 
-.post {
 
-
-}
 
 footer {
     padding-left: 15px;
@@ -138,4 +155,14 @@ footer {
             "my-aside my-section my-section"
             "my-footer my-footer my-footer"
     }
+}
+
+
+input:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+button:hover {
+    cursor: pointer;
+    
 }
